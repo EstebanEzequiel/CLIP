@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-image: url(img/Cobra-Kai-Wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alegreya{
+    font-family: 'Alegreya Sans', sans-serif; 
+}
+
+article img{
+    max-width: 85%;    
+    opacity: 0.6;
+}
+
+footer p{
+    font-size: 1.5rem;
+}
+
+#netflix{
+    max-width: 8%;
+}
+
+.article{
+    background-image: url(img/789647.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    opacity: 0.25;
+}
+
+form{
+    border: 1px solid rgba(255, 255, 0, 0.3);
+    border-radius: 0.25rem;
+    padding: 22px 22px 32px;
+}
+
+div img{
+    max-width: 100%;
+}
+
+#foto_tabla{
+    max-width: 100%;
+}

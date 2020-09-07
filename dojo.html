@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/icono.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cobra Kai</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark alegreya"
+        style="background-color: transparent; font-size: 1.2rem"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/icono.png"
+            width="70"
+            class="d-inline-block align-top"
+            alt=""
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto" style="font-size: 1.3rem">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dojo.html">Dojo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inscripcion.html">Inscripción</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container text-justify text-white-50">
+        <br /><br />
+        <div class="row p-2">
+          <div class="col-md-8">
+            <p>
+              Cobra Kai, conocido también como Cobra Kai Karate, es un dojo de
+              karate que desde su fundación fue dirigido por John Kreese, un
+              veterano de la Guerra de Vietnam. Dado que Kreese y su amigo
+              Terence Silver entrenaron previamente bajo el mando del maestro
+              Kim Sun-Yung en Corea del Sur, Kreese le instruyó a sus
+              estudiantes a ser despiadados con sus enemigos, haciendo que Cobra
+              Kai fuera cruel y poco ético. Aunque el dojo fue cerrado en 1985
+              como resultado de las malas enseñanzas de John Kreese y su fallido
+              intento de reabrirlo con el apoyo de Terence Silver, su antiguo
+              alumno lo reabrió en 2017.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/Dojo_Cobra_Kai.jpg" alt="" />
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="col-md-7 text-center">
+            <h1>Juguemos !!!</h1>
+            <br />
+            <p>Ingresa tu nombre: <input type="text" id="nombre" /></p>
+            <br />
+            <h3>¿De quien es la frase?</h3>
+            <cite class="text-justify"
+              >"Mira, a mí no me enseñaron la diferencia entre piedad y honor, y
+              pagué el precio. Si soy tan exigente contigo es porque tienes el
+              potencial de ser mejor que yo."</cite
+            ><br /><br />
+          </div>
+          <div class="col-md flex">
+            <a onclick="jugar_ahora()">
+              <img src="img/icono.png" alt="" width="150" height="150" />
+            </a>
+            pincha aqui
+          </div>
+        </div>
+        <br /><br />
+        <div class="flex">
+          <h5 id="resultado"></h5>
+          <br /><br />
+        </div>
+        <div class="d-none" id="biografia">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>Historia</h2>
+              <br />
+              <article>
+                Johnny(John Lawrence) conoce a su nuevo vecino, Miguel Díaz, con
+                quien roza bruscamente cualquier conversación, y se siente
+                molesto al ver otro anuncio publicitario en LaRusso Auto.
+                Después de ofender involuntariamente a un cliente, Johnny pierde
+                su trabajo. Poco después, Johnny va a un centro comercial y
+                encuentra a Miguel comprando a Pepto para su abuela. Johnny sale
+                del centro comercial y se come su comida, mientras ve cómo
+                Miguel es acosado por un matón llamado Kyler y sus amigos. Kyler
+                finalmente arroja a Miguel al auto de Johnny, lo que despierta
+                la atención de Johnny y le da un incentivo para golpear a Kyler
+                y sus matones, de manera similar a como Miyagi había golpeado a
+                Johnny y sus matones años antes.
+                <br />
+                Johnny es arrestado por la pelea y regresa a casa al día
+                siguiente. Su padrastro, quien lo rescató, lo está esperando,
+                quien le da a Johnny un cheque como una forma de comprar a
+                Johnny de su vida. Johnny rompe el cheque sin dudarlo. Miguel,
+                impresionado por la destreza de lucha de Johnny, le pide a
+                Johnny que sea su Sensei, pero Johnny se niega. Saliendo a dar
+                un paseo, Johnny tuvo un flashback de Kreese estrangulándolo en
+                el estacionamiento durante los eventos de Karate Kid Parte II,
+                antes de escuchar un fuerte golpe. Dándose la vuelta, Johnny vio
+                que un grupo de chicas se había estrellado contra su auto.
+                Johnny se enfrentó a las chicas, pero se fueron corriendo,
+                dejando que su auto fuera remolcado.
+                <br />
+                Más tarde, Johnny fue a LaRusso Auto para recoger su auto, donde
+                se reunió con Daniel LaRusso, y se sorprende al ver que uno de
+                los pasajeros en la fuga y carrera no es otro que la hija de
+                LaRusso. Johnny se fue con su auto, y finalmente accedió a que
+                Miguel se convirtiera en su alumno. Johnny volvió a juntar las
+                piezas del cheque que le dio su padrastro, que solía alquilar un
+                espacio en el centro comercial y abrir un Dojo para él. Sin
+                embargo, con un solo estudiante, Johnny tuvo problemas para
+                pagar el alquiler y no logró atraer a más estudiantes al pasar
+                volantes. Impresionado por la devoción de Miguel, lo entrena más
+                duro y lo lleva al baile de Halloween de su escuela vestido con
+                el atuendo de esqueleto que Johnny y sus amigos de Cobra Kai
+                usaron para el baile en su último año. LaRusso lo atrapa volando
+                folletos alrededor de la escuela y lo enfrenta, pero sale
+                corriendo para seguir a Samantha y Kyler a un salón de clases.
+                Más tarde, Johnny encuentra a Miguel en el suelo en el
+                casillero, golpeado severamente después de que Kyler y sus
+                amigos lo atacaron. Él regresa a casa con Miguel, y Carmen exige
+                que Johnny se mantenga alejado de su hijo.
+                <br />
+                Más tarde, Johnny se entera de que su hijo había estado ausente
+                de la escuela por un mes e intenta hablar con su hijo, quien se
+                niega a escuchar y se burla de su padre sobre el éxito que tuvo
+                su rival de karate, LaRusso. Más tarde, interrumpe la cita de
+                Shannon con un hombre de negocios y se enfrenta a ella por
+                ignorar a su hijo y permitirle que se salte de las clases, pero
+                ella rechaza su oferta de cuidar a su hijo y le dice que no hay
+                una segunda oportunidad para ser madre. Johnny inicialmente se
+                negó a entrenar a Aisha Robinson debido a que nunca permitió que
+                las mujeres entrenaran en Cobra Kai, pero Miguel lo convenció
+                para que la entrenara. Así, Lawrence le permite entrenar. Él
+                felicita a Aisha por el hecho de que ella es una Cobra natural
+                cuando ataca a su propia amiga. Más tarde gana más estudiantes
+                para entrenar, sin embargo, la mitad de los estudiantes,
+                incluido Demitri, rápidamente abandonan el dojo debido a las
+                duras enseñanzas de Lawrences. Incluso Lawrence le dice a Eli, a
+                quien Sensei Johnny lo llamó labio, "voltear el guión", en el
+                que Eli se va. Sin embargo, para sorpresa de Johnny, Miguel y
+                Aisha, Eli regresa con su nuevo look y Johnny lo apodó Hawk.
+                <br />
+                A instancias de Miguel, Johnny intentó inscribir a su dojo en el
+                All-Valley Tournament, pero se enfurece cuando se entera de que
+                Cobra Kai fue expulsado del torneo desde 1985. Johnny fue al
+                comité de All Valley Tournament, del cual Daniel es parte. A
+                pesar del rechazo de Daniel, Cobra Kai se reincorpora más tarde
+                después de que él le dijo al comité que Cobra Kai de Johnny es
+                diferente de su sensei "muerto" (Kreese), ya que enseña a los
+                estudiantes, que son víctimas de acoso, a ser más fuertes.
+                Cuando Miguel muestra una fotografía, su novia Samantha desde su
+                teléfono celular a Johnny, rápidamente le advierte que Miguel
+                debe tener cuidado con los LaRussos cuando le cuenta a Miguel
+                sobre su rivalidad con Daniel. Cuando los dos llegan a su
+                complejo de apartamentos después del entrenamiento, Carmen
+                invita a Johnny a cenar, le cuenta la historia de su matrimonio
+                y cómo ella no deja que el pasado la persiga. Conmovido por
+                esto, Johnny limpia su apartamento, los seres están dando los
+                primeros pasos hacia un estilo de vida más saludable y le
+                devuelve a Sid el dinero que utilizó para el dojo. Mientras le
+                escribe una carta a Robby con la esperanza de reconciliarse,
+                Johnny de repente escucha el rompimiento del cristal, en el que
+                resulta que Louie, el primo de Daniel, destruye su auto,
+                afirmando que esto se considera un "mensaje" de Daniel LaRusso
+                antes de que Johnny pelee. Louie y sus matones. Enojado le
+                pregunta a Louie dónde reside Daniel, en la que Louie le
+                responde que Daniel está en Encino Hills.
+                <br />
+                Johnny va a la residencia de Daniel para enfrentarlo, pero
+                Daniel lo refuta y él les dice que nunca incendió su auto, hasta
+                que Amanda interviene para acomodarse en el desayuno. Daniel le
+                da vacilante a Johnny su nuevo auto y pasaron su tiempo haciendo
+                la prueba de manejo y compartiendo sus buenos momentos sobre su
+                pasado en el bar. Cuando Johnny lleva a Daniel de vuelta a su
+                casa por la noche, Johnny ve repentinamente a su propio hijo
+                Robby, a quien Daniel entrenó, para enfado de Johnny con Daniel.
+                Robby rápidamente defiende a Daniel de su propio padre, y Johnny
+                se va, lastimado porque su hijo tenía más respeto por LaRusso y
+                estaba dispuesto a lastimar a su propio padre para proteger a su
+                jefe. A su vez, Daniel obliga a Robby a salir de su casa. En el
+                Torneo All Valley, Johnny y sus estudiantes de Cobra Kai
+                participaron en el torneo, con Hawk y Miguel se clasificaron
+                para las semifinales. Para sorpresa de Johnny, su hijo Robby
+                ingresa solo al torneo, hasta que Daniel finalmente acepta a
+                Robby y se convierte en representante de Miyagi-Do. Después de
+                que Hawk es descalificado debido a un contacto ilegal contra
+                Robby, Johnny se acerca rápidamente a su hijo para verificar,
+                pero el árbitro le niega que se acerque a él. Johnny se da
+                cuenta repentinamente de que sus estudiantes se han corrompido
+                por las crueles enseñanzas de Cobra Kai. Durante la pelea final
+                entre Miguel y Robby, Miguel le dice a Johnny que aprovechará el
+                brazo lesionado de Robby, pero Johnny le dice que no tiene que
+                luchar sucio, en el que Miguel se niega y él les dice que puede
+                hacer esto. Miguel finalmente gana el Torneo All Valley. Después
+                del torneo, Johnny se acerca a Robby para pedirle perdón; están
+                algo reconciliados antes de que Robby se vaya con Daniel.
+                <br />
+                De vuelta en el Dojo Cobra Kai Dojo, Johnny escucha que alguien
+                está entrando por la puerta. Inicialmente, asumiendo que era
+                Miguel, Johnny se sorprende al ver al antiguo sensei John
+                Kreese, para su sorpresa. Kreese lo felicita por que Cobra Kai
+                haya vuelto a la cima y le dice que la verdadera historia acaba
+                de comenzar.
+              </article>
+              <br /><br />
+            </div>
+            <div class="col-md-4">
+              <h3>Miembros</h3>
+              <br />
+              <table class="table text-white-50">
+                <thead>
+                  <img src="img/Johnny_Lawrence.png" id="foto_tabla" />
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Nombre real</th>
+                    <td>John Lawrence</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Apodo(s)</th>
+                    <td>Johnny</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nacionalidad</th>
+                    <td>Estadounidense</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Familia</th>
+                    <td>
+                      Laura Lawrence (madre) <br />
+                      Sid Weinberg (padrastro) <br />
+                      Shannon Keene (ex esposa) <br />
+                      Robert Keene (hijo) <br />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nacimiento</th>
+                    <td>20 de agosto de 1967</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Edad</th>
+                    <td>52 años</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ocupación</th>
+                    <td>Instructor de Karate</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Afiliación</th>
+                    <td>Dojo Cobra Kai</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+    </section>
+    <footer>
+      <br />
+      <p class="alegreya text-center">
+        e2equle1 &copy; 2020 all rights reserved
+      </p>
+      <br />
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

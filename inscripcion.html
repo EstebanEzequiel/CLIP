@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/icono.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cobra Kai</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark alegreya"
+        style="background-color: transparent; font-size: 1.2rem"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/icono.png"
+            width="70"
+            class="d-inline-block align-top"
+            alt=""
+            loading="lazy"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto" style="font-size: 1.3rem">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dojo.html">Dojo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inscripcion.html">Inscripcion</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="flex" style="height: 190%">
+        <h2 class="text-uppercase text-white-50">unete a las cobras</h2>
+      </div>
+    </header>
+    <section class="container flex">
+      <div class="text-white clearfix">
+        <br /><br /><br /><br />
+        <form action="#" class="was-validated">
+          <div class="form-group">
+            <label for="name">Apellido y Nombres</label>
+            <input
+              type="text"
+              pattern="[a-zA-Z ]{1,25}"
+              maxlength="25"
+              id="name"
+              class="form-control"
+              required
+            />
+            <div class="valid-feedback">Ok</div>
+            <div class="invalid-feedback">*obligatorio</div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-7">
+              <label for="dni">DNI</label>
+              <input type="number" id="dni" class="form-control" required />
+              <div class="valid-feedback">Ok</div>
+              <div class="invalid-feedback">*obligatorio</div>
+            </div>
+            <div class="form-group col-md-5">
+              <label for="date">Fecha Nacimiento</label>
+              <input type="date" id="date" class="form-control" required />
+              <div class="valid-feedback">Ok</div>
+              <div class="invalid-feedback">*obligatorio</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Dirección</label>
+            <input type="text" id="address" class="form-control" required />
+            <div class="valid-feedback">Ok</div>
+            <div class="invalid-feedback">*obligatorio</div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" required />
+            <div class="valid-feedback">Ok</div>
+            <div class="invalid-feedback">*obligatorio</div>
+          </div>
+          <div class="form-group">
+            <label for="comentario">Comentarios</label>
+            <textarea
+              name="mensaje"
+              id="comentario"
+              class="form-control"
+              required
+            ></textarea>
+            <div class="valid-feedback">Ok</div>
+            <div class="invalid-feedback">*obligatorio</div>
+          </div>
+          <button type="submit" class="btn btn-outline-warning float-right">
+            Enviar
+          </button>
+          <br />
+        </form>
+      </div>
+      <br /><br />
+    </section>
+    <footer>
+      <br />
+      <p class="alegreya text-center">
+        e2equle1 &copy; 2020 all rights reserved
+      </p>
+      <br />
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
