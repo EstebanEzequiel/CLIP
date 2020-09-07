@@ -41,7 +41,7 @@ function jugar_ahora() {
 
     document.getElementById("resultado").className = "alert alert-warning";
     document.getElementById("resultado").innerHTML =
-      "Es el Sensei <strong class='text-capitalize'>" + respuesta + "</strong>";
+      "Sensei <strong class='text-capitalize'>" + respuesta + "</strong>";
     document.getElementById("biografia").className = "d-block";
   }
 }
