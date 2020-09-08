@@ -8,6 +8,8 @@ body{
 
 header{
     background-image: url(../img/Cobra-Kai-Wallpaper.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: soft-light;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,8 +28,9 @@ header{
 }
 
 article img{
-    max-width: 85%;    
-    opacity: 0.6;
+    max-width: 86.5%;    
+    opacity: 0.4;
+    filter: grayscale(100%);
 }
 
 footer p{
@@ -35,7 +38,7 @@ footer p{
 }
 
 #netflix{
-    max-width: 8%;
+    max-width: 6%;
 }
 
 .article{
@@ -59,4 +62,22 @@ div img{
 
 #foto_tabla{
     max-width: 100%;
+}
+
+.animado{
+    opacity: 0;
+    transition: all 3s;
+}
+
+.mostrarArriba{
+    animation: mostrarUp 1s;
+}
+
+@keyframes mostrarUp{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }

@@ -29,7 +29,7 @@
         <a class="navbar-brand" href="#">
           <img
             src="img/icono.png"
-            width="70"
+            width="60"
             class="d-inline-block align-top"
             alt=""
             loading="lazy"
@@ -64,10 +64,12 @@
     <section>
       <div class="container text-justify text-white-50">
         <br /><br />
+        <h1 class="alegreya text-uppercase text-center">Cobra Kai</h1>
+        <br><br>
         <div class="row p-2">
           <div class="col-md-8">
             <p>
-              Cobra Kai, conocido también como Cobra Kai Karate, es un dojo de
+              Conocido también como Cobra Kai Karate, es un dojo de
               karate que desde su fundación fue dirigido por John Kreese, un
               veterano de la Guerra de Vietnam. Dado que Kreese y su amigo
               Terence Silver entrenaron previamente bajo el mando del maestro
@@ -83,30 +85,32 @@
             <img src="img/Dojo_Cobra_Kai.jpg" alt="" />
           </div>
         </div>
-        <br /><br />
-        <div class="row">
-          <div class="col-md-7 text-center">
-            <h1>Juguemos !!!</h1>
+        <br />
+        <div class="row p-2">
+          <div class="col-md-8">
+            <h2 class="text-center">Juguemos !!!</h2>
             <br />
-            <p>Ingresa tu nombre: <input type="text" id="nombre" /></p>
+            <p class="text-center">Ingresa tu nombre: <input type="text" id="nombre" /></p>
             <br />
-            <h3>¿De quien es la frase?</h3>
+            <h3>De quién es la frase?</h3>
             <cite class="text-justify"
-              >"Mira, a mí no me enseñaron la diferencia entre piedad y honor, y
-              pagué el precio. Si soy tan exigente contigo es porque tienes el
-              potencial de ser mejor que yo."</cite>
-              <br /><br />
-              <h5 id="resultado"></h5>
+              >"Mira, a mí no me enseñaron la diferencia entre piedad y honor, y pagué el precio. Si soy tan exigente contigo es porque tienes el potencial de ser mejor que yo."</cite>
               <br /><br />
           </div>
           <div class="col-md flex">
             <a onclick="jugar_ahora()">
               <img src="img/icono.png" alt="" width="150" height="150" />
             </a>
-            pincha aqui
+            pincha y responde
           </div>
         </div>
-        <br /><br />
+        <div class="flex">
+          <div class="d-none" id="pre-resultado">
+            <br><br>
+            <h5 id="resultado"></h5>
+            <br><br><br><br>
+          </div>
+        </div>
         <div class="d-none" id="biografia">
           <div class="row">
             <div class="col-md-8">
@@ -297,11 +301,11 @@
       <br /><br />
     </section>
     <footer>
-      <br />
+      <br>
       <p class="alegreya text-center">
-        e2equle1 &copy; 2020 all rights reserved
+      &copy; 2020 all rights reserved
       </p>
-      <br />
+      <br>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

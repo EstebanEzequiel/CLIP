@@ -8,7 +8,7 @@ function jugar_ahora() {
   var nombre = document.getElementById("nombre").value;
 
   if (nombre == "") {
-    alert("Por favor, ingrese su nombre para jugar. !");
+    alert("Por favor, ingrese su nombre para jugar.");
   } else {
     while (cant_intentos > 0 && acerto != true) {
       cant_intentos--;
@@ -38,10 +38,27 @@ function jugar_ahora() {
         alert("Perdiste Amigo !!");
       }
     }
-
+    
+    document.getElementById("pre-resultado").className = "d-block";
     document.getElementById("resultado").className = "alert alert-warning";
     document.getElementById("resultado").innerHTML =
       "Sensei <strong class='text-capitalize'>" + respuesta + "</strong>";
     document.getElementById("biografia").className = "d-block";
   }
 }
+
+
+let animado = document.querySelectorAll(".animado");
+    
+    function mostrarScroll() {
+      let scrollTop = document.documentElement.scrollTop;
+      for (var i = 0 ; i < animado.length; i++){
+        let altura = animado[i].offsetTop;
+        if (altura - 300 < scrollTop) {
+          animado[i].style.opacity = 1;
+          animado[i].classList.add("mostrarArriba")
+          
+        }
+      }
+    }
+    window.addEventListener('scroll',mostrarScroll);
