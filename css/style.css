@@ -8,7 +8,7 @@ body{
 
 header{
     background-image: url(../img/Cobra-Kai-Wallpaper.png);
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: soft-light;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,4 +80,9 @@ div img{
     100%{
         transform: translateY(0);
     }
+}
+
+hr{
+    background-color: white;
+    max-width: 10%;
 }
