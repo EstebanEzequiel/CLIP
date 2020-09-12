@@ -43,7 +43,7 @@ function jugar_ahora() {
     document.getElementById("resultado").className = "alert alert-warning";
     document.getElementById("resultado").innerHTML =
       "Sensei <strong class='text-capitalize'>" + respuesta + "</strong>";
-    document.getElementById("biografia").className = "d-block";
+    document.getElementById("tablas").className = "d-block";
   }
 }
 
@@ -54,7 +54,7 @@ let animado = document.querySelectorAll(".animado");
       let scrollTop = document.documentElement.scrollTop;
       for (var i = 0 ; i < animado.length; i++){
         let altura = animado[i].offsetTop;
-        if (altura - 300 < scrollTop) {
+        if (altura - 400 < scrollTop) {
           animado[i].style.opacity = 1;
           animado[i].classList.add("mostrarArriba")
           

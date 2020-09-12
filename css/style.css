@@ -3,13 +3,11 @@
 }
 
 body{
-    background-color: #292b2c;
+    background-color: #111111;
 }
 
 header{
     background-image: url(../img/Cobra-Kai-Wallpaper.png);
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: soft-light;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,7 +27,7 @@ header{
 }
 
 article img{
-    max-width: 86.5%;    
+    max-width: 100%;    
     opacity: 0.4;
     filter: grayscale(100%);
 }
@@ -67,7 +65,7 @@ div img{
 
 .animado{
     opacity: 0;
-    transition: all 3s;
+    transition: all 2s;
 }
 
 .mostrarArriba{
@@ -85,5 +83,9 @@ div img{
 
 hr{
     background-color: white;
-    max-width: 10%;
+    max-width: 40px;
+}
+
+#tablas{
+    font-size: 14px;
 }
