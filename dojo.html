@@ -12,10 +12,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icono.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Cobra Kai</title>
@@ -23,18 +20,15 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg navbar-dark alegreya sticky-top"
-        style="background-color: transparent; font-size: 1.2rem"
-      >
-        <a class="navbar-brand" href="#">
-          <img
-            src="img/icono.png"
-            width="35"
-            class="d-inline-block align-top"
-            alt=""
-            loading="lazy"
-          />
-        </a>
+        class="navbar navbar-expand-lg navbar-dark long_cang sticky-top"
+        style="background-color: transparent">
+      <a class="navbar-brand" href="#">
+        <img
+          src="img/puño.png"
+          width="50"
+          class="d-inline-block align-top"
+          alt=""
+          loading="lazy"/></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,12 +36,11 @@
           data-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto" style="font-size: 1.3rem">
+          <ul class="navbar-nav ml-auto px-4" style="font-size: 1.7rem">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
@@ -55,19 +48,30 @@
               <a class="nav-link" href="dojo.html">Dojo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="inscripcion.html">Inscribite</a>
+              <a class="nav-link" href="inscripcion.html">Inscribete</a>
             </li>
           </ul>
         </div>
       </nav>
+      <audio autoplay>
+        <source src="./sound/Quiver.mp3" type="audio/mp3" />
+      </audio>
     </header>
-    <br /><br />
+    <br><br>
     <section>
       <div class="container text-white-50">
-        <div class="text-center">
-          <h1 class="alegreya text-uppercase text-center">Cobra Kai</h1>
-          <cite class="text-center">Esto es lo que debes saber sobre Cobra Kai, la serie basada en la franquicia de karate que gozó de gran fama en la década de los 80.</cite><br><br><hr>
-        </div>
+        <div class="row">
+            <div class="col-sm flex">
+              <img src="img/icono.png" alt="" width="158">
+            </div>
+            <div class="col-sm flex">
+              <h1 class="long_cang text-uppercase text-center display-3 text-light">Cobra Kai <br> karate</h1>
+            </div>
+            <div class="col-sm flex">
+              <img src="img/icono.png" alt="" width="158">
+            </div>
+          </div>
+          <br><hr>
         <div class="row p-2">
           <div class="col-md-8 text-justify">
             <article>
@@ -82,18 +86,26 @@
         </div>
         <div class="p-2">
           <br>
-          <h3 class="alegreya text-uppercase">Sinopsis</h3>
+          <h3 class="long_cang text-uppercase display-4 text-light">Reparto</h3>
+            <div class="text-justify">
+              Al frente del cast aparecen William Zabka, como Johnny Lawrence, y Ralph Macchio, como Daniel LaRusso. Asimismo, la serie toma como personajes principales a Xolo Maridueña, como Miguel Díaz; Mary Mouser, como Samantha LaRusso; Peyton List, como Tory; Tanner Buchannan, como Robby Keene, y Courtney Henggeler, como Amanda LaRusso.
+
+              De igual forma, participan los actores Joe Seo, Jacob Bertrand, Nichole Brown, Connor Murdock, Griffin Santopietro, Hannah Kepple, Gabe Bowles, Owen Morgan, Annalisa Cochrane, Gianni Decenzo, Cameron Markeles, Denzel K. Williams, Bo Mitchell, Bret Ernst, Dan Ahdoot y Jonathan Mercedes, entre otros.
+            </div><br><br><br>
+          <h1 class="long_cang text-uppercase display-4 text-light">Sinopsis + trailer</h1>
             <div class="text-justify">
               Han pasado 30 años desde aquel campeonato de 1984. Johnny Lawrence no se encuentra en el mejor momento de su vida, por lo que decide abrir el Dojo Cobra Kai para retomar el camino. Esta aventura lo vuelve a enfrentar con su anterior rival, Daniel LaRusso, quien ahora tiene gran éxito en otros negocios. Pese a ello, ambos se encuentran en el mismo camino de querer encontrar el equilibrio en sus vidas.
             </div>
             <br>
-            <hr>
-         </div>
-        <div class="row p-2">
+        </div>
+        <div class="trailer">
+          <iframe src="https://www.youtube-nocookie.com/embed/xCwwxNbtK6Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+        </div>
+        <div class="row p-2 mt-5">
           <div class="col-md-8 clearfix text-justify">
-            <h2 class="text-center alegreya text-uppercase">Juguemos ...</h2>
+            <h1 class="long_cang text-center text-uppercase display-4 text-light">Juguemos...</h1>
             <br />
-            <p class="text-center">Pon tu nombre <input type="text" id="nombre" /></p>
+            <p class="text-center"><input type="text" id="nombre" placeholder=" Ingresa tu nombre"></p>
             <br><br>
             <h4>De quién es la frase ...</h4>
             <cite>
@@ -105,7 +117,7 @@
           </div>
           <div class="col-md flex">
             <a onclick="jugar_ahora()">
-              <img src="img/icono.png" alt="" width="150" height="150" />
+              <img src="img/puño.png" alt="" width="300">
             </a>
             pincha y responde
           </div>
@@ -118,7 +130,7 @@
         </div>
         <div class="d-none" id="tablas">
           <br><br>
-          <h3 class="alegreya text-uppercase">integrantes cobra kai</h3><br>
+          <h1 class="long_cang text-uppercase text-light display-4">cobra kai</h1><br>
           <div class="row">
             <div class="col-md-3">
               <table class="table text-white-50">
@@ -214,7 +226,7 @@
                 <tbody>
                   <tr>
                     <th scope="row">Nombre</th>
-                    <td>Tory</td>
+                    <td>------------</td>
                   </tr>
                   <tr>
                     <th scope="row">Apodo(s)</th>
@@ -271,8 +283,8 @@
               </table>
             </div>
           </div>
-          <br><br>
-          <h3 class="alegreya text-uppercase">integrantes Miyagi-Do</h3><br>
+          <br><br><br>
+          <h3 class="long_cang text-uppercase display-4 text-light">miyagi-Do</h3><br>
           <div class="row">
             <div class="col-md-3">
               <table class="table text-white-50">
@@ -449,24 +461,16 @@
               </table>
             </div>
           </div>
-          <hr>
-          <br>
-          <h3 class="alegreya text-uppercase">Reparto</h3>
-            <div class="text-justify">
-              Al frente del cast aparecen William Zabka, como Johnny Lawrence, y Ralph Macchio, como Daniel LaRusso. Asimismo, la serie toma como personajes principales a Xolo Maridueña, como Miguel Díaz; Mary Mouser, como Samantha LaRusso; Peyton List, como Tory; Tanner Buchannan, como Robby Keene, y Courtney Henggeler, como Amanda LaRusso.
-
-              De igual forma, participan los actores Joe Seo, Jacob Bertrand, Nichole Brown, Connor Murdock, Griffin Santopietro, Hannah Kepple, Gabe Bowles, Owen Morgan, Annalisa Cochrane, Gianni Decenzo, Cameron Markeles, Denzel K. Williams, Bo Mitchell, Bret Ernst, Dan Ahdoot y Jonathan Mercedes, entre otros.
-            </div>
+          <br><br><br>
         </div>
       </div>
     </section>
-    <br>
-    <footer>
+    <footer class="container text-center">
+      <hr>
       <br>
-      <p class="alegreya text-center text-white-50">
+      <p class="long_cang text-center text-white-50">
       &copy; 2020 all rights reserved</p><br>
     </footer>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

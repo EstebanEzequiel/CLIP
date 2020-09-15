@@ -12,10 +12,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icono.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Cobra Kai</title>
@@ -23,18 +20,15 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg navbar-dark alegreya sticky-top"
-        style="background-color: transparent; font-size: 1.2rem"
-      >
-        <a class="navbar-brand" href="#">
-          <img
-            src="img/icono.png"
-            width="35"
-            class="d-inline-block align-top"
-            alt=""
-            loading="lazy"
-          />
-        </a>
+        class="navbar navbar-expand-lg navbar-dark long_cang sticky-top"
+        style="background-color: transparent">
+      <a class="navbar-brand" href="#">
+        <img
+          src="img/puño.png"
+          width="50"
+          class="d-inline-block align-top"
+          alt=""
+          loading="lazy"/></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,12 +36,11 @@
           data-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto" style="font-size: 1.3rem">
+          <ul class="navbar-nav ml-auto px-4" style="font-size: 1.7rem">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
@@ -55,7 +48,7 @@
               <a class="nav-link" href="dojo.html">Dojo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="inscripcion.html">Inscribite</a>
+              <a class="nav-link" href="inscripcion.html">Inscribete</a>
             </li>
           </ul>
         </div>
@@ -68,7 +61,7 @@
       <div class="text-white clearfix">
         <br>
         <form action="#" class="was-validated">
-          <h2 class="text-uppercase text-white-50 alegreya text-center">unete a las cobras</h2><br>
+          <h1 class="text-uppercase text-light long_cang text-center display-4">unete a las cobras</h1><br>
           <div class="form-group">
             <label for="name">Apellido y Nombres</label>
             <input
@@ -77,8 +70,7 @@
               maxlength="25"
               id="name"
               class="form-control"
-              required
-            />
+              required/>
             <div class="valid-feedback">Ok</div>
             <div class="invalid-feedback">*obligatorio</div>
           </div>
@@ -114,8 +106,8 @@
               name="mensaje"
               id="comentario"
               class="form-control"
-              required
-            ></textarea>
+              required>
+            </textarea>
             <div class="valid-feedback">Ok</div>
             <div class="invalid-feedback">*obligatorio</div>
           </div>
@@ -125,14 +117,13 @@
           <br />
         </form>
       </div>
-      <br /><br />
+      <br><br>
     </section>
-    <footer>
+    <footer class="container text-center">
+      <hr>
       <br>
-      <p class="alegreya text-center text-white-50">
-      &copy; 2020 all rights reserved
-      </p>
-      <br>
+      <p class="long_cang text-center text-white-50">
+      &copy; 2020 all rights reserved</p><br>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

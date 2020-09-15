@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: #111111;
+    background-color: #131313;
 }
 
 header{
@@ -22,8 +22,10 @@ header{
     justify-content: center;
 }
 
-.alegreya{
-    font-family: 'Alegreya Sans', sans-serif; 
+.long_cang{
+    font-family: 'Long Cang', cursive;
+    font-weight: bold;
+    font-style: italic;
 }
 
 article img{
@@ -37,7 +39,7 @@ footer p{
 }
 
 #netflix{
-    max-width: 6%;
+    max-width: 10%;
 }
 
 .article{
@@ -50,9 +52,9 @@ footer p{
 }
 
 form{
-    border: 1px solid rgba(255, 255, 0, 0.3);
+    /* border: 1px solid rgba(255, 255, 0, 0.3); */
     border-radius: 0.25rem;
-    padding: 22px 22px 32px;
+    padding: 32px;
 }
 
 div img{
@@ -82,10 +84,35 @@ div img{
 }
 
 hr{
-    background-color: white;
-    max-width: 40px;
+    background-color: red;
+    max-width: 100%;
 }
 
 #tablas{
     font-size: 14px;
+}
+
+.trailer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+iframe{
+
+    position: absolute;
+    top:0;
+    left: 0;
+    left: 0;
+    right: 0;
+    width: 100%;    
+    height: 100%;     
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
 }
